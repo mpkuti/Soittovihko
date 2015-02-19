@@ -1,0 +1,92 @@
+\addcontentsline{toc}{section}{\arabic{songnum} Kulkuri ja joutsen}
+\beginsong{Kulkuri ja joutsen}[by={san. Reino Helismaa säv. Lasse Dahlquist},
+index={Oon kulkuriksi syntynyt mä vainen}
+]
+
+%% Säkeistöjen sisennys:
+\setlength{\versenumwidth}{0mm}
+
+% TAHTILAJI
+\meter{4}{4}
+
+%********** 1. SÄKEISTÖ **********
+% Säkeistön soinnut tallennetaan nimellä "verse_oma".
+\beginverse\memorize[verse_oma]
+Oon |\[C]kulkuriksi syntynyt mä |\[C]vainen
+ja |\[C]paljain jaloin \[Em7]kierrän \[A7]maail|\[Dm7]maa. \[G7]
+Näin |\[Dm7]kerran unta: joutsen taiva|\[G7]hainen
+mun |\[Dm7]antoi hetken \[G7]kanssaan taival|\[C]taa.
+Näin |\[C]maat ja metsät, järvet maani |\[C]armaan,
+sen |\[Gm7]kaiken sini\[C7]taivahalta |\[F]näin. \[A7]
+Tuuli |\[Dm7]lauloi laulu\[D#\(^\circ\)]jaan,
+sadun |\[C]hohde \[B&7]peitti \[A7]maan,
+\[A7]iha|\[Dm7]nampaa en mä \[G7]koskaan nähdä |\[G7-9]saa\[C]ta.
+\endverse
+
+%********** 2. SÄKEISTÖ **********
+\beginverse\replay[verse_oma]
+Ja |^laulun tämän lauloi mulle |^tuuli:
+"On |^kaikkein kaunein ^aina ^oma |^maa. ^
+Niin |^moni muuta paremmaksi |^luuli,
+mut |^pettymyksen ^itsellensä |^saa.
+Ei |^missään taivas sinisemmin |^loista,
+ei |^missään hanki ^hohda kirkkaam|^min. ^
+Tämä |^paina sydä^mees,
+niin on |^taivas ^aina ^sees
+^ja sun |^taipaleeltas ^murhe kauas |^kaik^koo."
+\endverse   
+
+%********** 3. SÄKEISTÖ **********
+\beginverse\replay[verse_oma]
+Niin |^päättyi uni, mutta vielä |^vuotan
+mä |^kohtaavani ^kerran ^joutse|^nen, ^
+ja |^siihen asti unelmiini |^luotan;
+on |^helppo unek^sia ihmi|^sen.
+Siks |^paljain jaloin onneani |^etsin
+ja |^huolet laulu^llani haihdu|^tan. ^    
+Elä|^mä on iha^naa,
+kun sen |^oikein ^oival^taa
+^ja kun |^lentää siivin ^valkein niin kuin |^jout^sen.
+\endverse
+
+\beginverse*
+Elä|\[F]mä on iha\[\Ferli{\bfseries\ttfamily F}#\(^\circ\)]naa,        
+kun sen |\[C]oikein \[B&7]oival\[\Ferli{\bfseries\ttfamily A7}]taa
+ja kun |\[Dm7]lentää siivin \[G7]valkein niin kuin |\[\Ferli{\bfseries\ttfamily G7-9}]jout\[\Ferli{\bfseries\ttfamily C}]sen.
+\endverse
+
+%********** KITARAOTTEET **********
+% Joitain otteita on tallennettuna kansioon "soinnut".
+% Lisää voi tehdä itse käskyllä \gtab{}{}.
+\ifchorded
+%\vspace{\versesep} % Tämä rivi luo välin kappaleen ja sointuotteiden väliin.
+%\noindent % Ei sisennystä.
+%\input{soinnut/Em}
+%\input{soinnut/Am}
+%\gtab{Am/F#}{1:202210:203410}
+%\gtab{H7}{1:X21202:021304}
+\fi
+
+
+\endsong
+
+
+%********** SEKALAISIA OHJEITA **********
+%
+%********** % **********
+% Kaikki, mitä kirjoitetaan prosenttimerkin jälkeen
+% samalle riville, jää kokonaan huomioitta lopulli-
+% sessa dokumentissa.
+%
+%********** \brk **********
+% \brk-käskyllä merkitään haluttu rivinvaihdon kohta.
+% Jos rivi on liian pitkä lopullisessa dokumentissa,
+% se katkeaa \brk:n kohdalta.
+%
+%********** \memorize[NIMI] **********
+% Tallentaa soinnut tästä eteenpäin nimellä NIMI.
+%
+%********** \replay[NIMI] **********
+% Ottaa NIMI-nimellä tallennetut soinnut käyttöön.
+% Merkki ^ valisee seuraavan soinnun tallennetusta
+% sointujonosta.

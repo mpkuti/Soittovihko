@@ -1,0 +1,136 @@
+\addcontentsline{toc}{section}{\arabic{songnum} Nopeimmat junat}
+\beginsong{Nopeimmat junat}[by={Anna Puu},
+index={Olen kasvanut kiinni maahan}
+]
+
+\capo{3}
+
+% TAHTILAJI TÄHÄN:
+\meter{4}{4}
+
+
+%********** INTRO **********
+\ifchorded
+\beginverse*
+{\nolyrics
+|\[F] |\[G] |\[F] |\[G]
+|\[F] |\[G] |\[C] |\[C]
+}
+\endverse
+\fi
+
+
+%********** 1. SÄKEISTÖ **********
+% Säkeistön soinnut tallennetaan nimellä "verse_oma".
+\beginverse\memorize[verse_oma]
+|\[F] Olen kasvanut |\[G]kiinni maahan, \brk|\[F] lapsuuden |\[G]maisemaan.
+|\[F] Olen kasvanut |\[G]kiinni poikaan,  \brk|\[C]siihen yhteen ja |\[Dm]oikeaan.
+|\[F] Olen kasvanut |\[G]kiinni taloon, \brk|\[F] jonka ikkunan|\[G]pielistä vetää.
+|\[F] En tahdo |\[G]kuuta taivaal|\[C]ta \brk kuin kerran |\[Dm]vuoteen |\[F]enää.
+Paikka se on |\[G]tämäkin.
+\endverse
+
+
+%********** 1. SÄKEISTÖN KERTOSÄE **********
+\beginchorus\memorize[chorus_oma]
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+|\[Em] mutta nopeimmat |\[Em]junat eivät, \brk|\[F] pysähdy |\[G]enää täällä.
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+mutta |\[F]nopeimmat \[Em]junat, |\[Dm]nopeimmat \[C]junat,
+ei |\[Am]nopeimmat \[G]junat enää  \mbar{2}{4}\[F\tiny(1/2)]pysähdy  \mbar{4}{4}\[C]täällä. |\[C]
+\endchorus
+
+%********** INTERLUDE **********
+\ifchorded
+\beginverse*
+{\nolyrics
+|\[F] |\[G] |\[F] |\[G]
+|\[F] |\[G] |\[C] |\[C]
+}
+\endverse
+\fi
+
+%********** 2. SÄKEISTÖ **********
+% Säkeistön soinnut on tallennettuna nimellä "verse_oma".
+% Ne otetaan käyttöön käskyllä \replay{}, ja ^-merkeillä.
+\beginverse\replay[verse_oma]
+|^ Olen kasvanut |^kiinni lähtöön, \brk|^ kaupungin |^kaipuuseen.
+|^ Lähtenyt |^monta kertaa, \brk|^palannut aina |^entiseen.
+|^ Olen kasvanut |^kiinni talveen, \brk|^ sen kuristus|^otteeseen
+|^ Kun pysyn sun |^luonas tiedän, \brk|^vielä jaksan |^kevääseen
+|^ Paikka se on |^tämäkin
+\endverse
+
+%********** 2. SÄKEISTÖN KERTOSÄE **********
+\beginchorus\replay[chorus_oma]
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+|\[Em] mutta nopeimmat |\[Em]junat eivät, \brk|\[F] pysähdy |\[G]enää täällä.
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+mutta |\[F]nopeimmat \[Em]junat, |\[Dm]nopeimmat \[C]junat,
+ei |\[Am]nopeimmat \[G]junat enää  \mbar{2}{4}\[F\tiny(1/2)]pysähdy  \mbar{4}{4}\[C]täällä. |\[C]
+\endchorus
+
+%********** INTERLUDE **********
+\ifchorded
+\beginverse*
+{\nolyrics
+|\[F] \[Em] |\[Dm] \[C] |\[Am] \[G]  \mbar{2}{4}\[F\tiny(2/4)]  \mbar{4}{4}\[C] |\[C]
+}
+\endverse
+\fi
+
+%********** BRIDGE **********
+\beginverse*\replay[verse_oma]
+|^ Olen kasvanut |^kiinni maahan, \brk|^lapsuuden |^maisemaan. |
+\endverse
+
+%********** 3. KERTOSÄE **********
+\beginchorus\memorize[chorus_oma]
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+|\[Em] mutta nopeimmat |\[Em]junat eivät, \brk|\[F] pysähdy |\[G]enää täällä.
+|\[C] Pilvien |\[C]alla, maan |\[Dm]päällä, |\[Dm]
+mutta |\[F]nopeimmat \[Em]junat, |\[Dm]nopeimmat \[C]junat,
+ei |\[Am]nopeimmat \[G]junat enää  \mbar{2}{4}\[F\tiny(1/2)]pysähdy  \mbar{4}{4}\[C]täällä, |\[C]
+\endchorus
+
+%********** OUTRO **********
+\beginverse*
+mutta |\[F]nopeimmat \[Em]junat, ei |\[Dm]nopeimmat \[C]junat,
+ei |\[Am]nopeimmat \[G]junat enää |\[F\tiny(1/2)]pysähdy |\[C]täällä. |\[C]
+\endverse
+
+%********** KITARAOTTEET **********
+% Joitain otteita on tallennettuna kansioon "soinnut".
+% Lisää voi tehdä itse käskyllä \gtab{}{}.
+%\ifchorded
+%\vspace{\versesep} % Tämä rivi luo välin kappaleen ja sointuotteiden väliin.
+%\noindent % Ei sisennystä.
+%\input{soinnut/Em}
+%\input{soinnut/Am}
+%\gtab{Am/F#}{1:202210:203410}
+%\gtab{H7}{1:X21202:021304}
+%\fi
+
+
+\endsong
+
+
+%********** SEKALAISIA OHJEITA **********
+%
+%********** % **********
+% Kaikki, mitä kirjoitetaan prosenttimerkin jälkeen
+% samalle riville, jää kokonaan huomioitta lopulli-
+% sessa dokumentissa.
+%
+%********** \brk **********
+% \brk-käskyllä merkitään haluttu rivinvaihdon kohta.
+% Jos rivi on liian pitkä lopullisessa dokumentissa,
+% se katkeaa \brk:n kohdalta.
+%
+%********** \memorize[NIMI] **********
+% Tallentaa soinnut tästä eteenpäin nimellä NIMI.
+%
+%********** \replay[NIMI] **********
+% Ottaa NIMI-nimellä tallennetut soinnut käyttöön.
+% Merkki ^ valisee seuraavan soinnun tallennetusta
+% sointujonosta.

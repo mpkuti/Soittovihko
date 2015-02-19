@@ -1,0 +1,130 @@
+\addcontentsline{toc}{section}{\arabic{songnum} Aikuinen nainen (kesken)}
+
+\beginsong{Aikuinen nainen (kesken)}[by={suom. san. K. Liuhala säv. G. Savio--A. Gasalle},
+index={Aikuinen nainen mä oon}
+]
+
+\meter{6}{8}
+
+
+%-------------------------------------------------------------------------------
+% INTRO
+%-------------------------------------------------------------------------------
+\beginverse*
+|\[F] \[Fsus] |\[F] \[Fsus]
+|\[F]Aikuinen \[Fsus]nainen mä oo|\[F]n, \[Fsus] 
+|\[F]en enää eksy \[Dm]maailman |\[Gm]tuulii\[Gsus]n.
+|\[Gm]Liittomme \[Gsus]vahvistukoo|\[Gm]n,
+\[Bb]tahtoisin |\[F]jatkaa \[F]hyvin alkanutta |\[C]matkaa.
+\endverse
+%-------------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------------------
+% 1. SÄKEISTÖ
+%-------------------------------------------------------------------------------
+\beginverse
+\[D7]Kun aika \memorize[verse_oma]|\[G]vaikeudet \[Gsus]tiellemme tu|\[G]o, \[Gsus]
+|\[G]onnesta me teemme \[Em]suojaavan |\[Am]muuri\[Asus]n.
+|\[Am]Voimaa tää \[Asus]rakkaus |\[Am]suo. \[C]Onnemme
+|\[G]kestää, \[G]minkään emme anna |\[D]estää.
+\[D]Paljosta lu|\[C]ovun, \[D7]jos saan luonain pitää
+|\[G]sun. \[Em] |\[Am7] \[D7]
+\endverse
+
+\beginchorus\memorize[chorus_oma]
+|\[G]E\[Em]|\[Am7]n \[D7]vapauttas tahdo
+|\[G]riis\[Hm7]tä|\[Am7]ä, \[D7] tahdo
+|\[G]e\[H7]n|\[Em] \[A7]itsenäisyyttäsi |\[Dsus]ki\[Dsus]is|\[D]tää.
+\[D]Sua \[C]tar\[D7]vit|\[G]s\[G]e|\[C]n \[D7]sydänystäväksi
+|\[G]ai\[H7]kuisen |\[Em]naisen.
+\[C]Kaiken me |\[G]jaamme,
+\[G]toisiamme tuke|\[D]kaamme.
+\[D]Aikuinen |\[C]nainen \[D7]tuntee arvon rakkau|\[G]den. \[Gsus] |\[G] \[Gsus]
+\endchorus
+%-------------------------------------------------------------------------------
+
+\beginverse\replay[verse_oma]
+|^Selkääni käännä mä en
+onnestani taistelen enkä pelkää
+toisista huolehtien
+kestämme paineet
+meitä eivät kaada laineet
+tuulilta suojaan sinut vien
+jos viedä saan
+\endverse
+
+En vapauttas tahdo riistää
+tahdo en itsenäisyyttäsi kiistää
+sua tarvitsen sydänystäväksi
+aikuisen naisen
+kaiken me jaamme
+toisiamme tukekaamme
+aikuinen nainen tuntee arvon rakkauden
+
+Sua tarvitsen sydänystäväksi
+aikuisen naisen
+kaiken me jaamme
+toisiamme tukekaamme
+aikuinen nainen tuntee arvon rakkauden.. (x2)
+
+
+%********** 2. SÄKEISTÖ **********
+% Säkeistön soinnut on tallennettuna nimellä "verse_oma".
+% Ne otetaan käyttöön käskyllä \replay{}, ja ^-merkeillä.
+%\beginverse\replay[verse_oma]
+%Hän |^kuuntelee vain |^varjoja,
+%ja |^nälkänsä hän ^unelmillaan \brk |^sammuttaa.
+%\endverse
+
+%********** 2. SÄKEISTÖN KERTOSÄE **********
+%\beginchorus\replay[chorus_oma]
+%Ja |^polte, joka ^sieluansa |^korven^taa,
+%se on |^vain, ^vain rakka|^us. ^
+%\endchorus
+
+%********** KITARAOTTEET **********
+% Joitain otteita on tallennettuna kansioon "soinnut".
+% Lisää voi tehdä itse käskyllä \gtab{}{}.
+\ifchorded
+\vspace{\versesep} % Tämä rivi luo välin kappaleen ja sointuotteiden väliin.
+\noindent % Ei sisennystä.
+\input{soinnut/F}
+\input{soinnut/Fsus4}
+\input{soinnut/Dm}
+\input{soinnut/Gm}
+\input{soinnut/Gsus4}
+\input{soinnut/Bb}
+\input{soinnut/C}
+\input{soinnut/D7}
+\input{soinnut/Am}
+\input{soinnut/Asus4}
+\input{soinnut/Em}
+\input{soinnut/G}
+\input{soinnut/Gsus4_}
+\input{soinnut/Am7}
+\fi
+
+
+\endsong
+
+
+%********** SEKALAISIA OHJEITA **********
+%
+%********** % **********
+% Kaikki, mitä kirjoitetaan prosenttimerkin jälkeen
+% samalle riville, jää kokonaan huomioitta lopulli-
+% sessa dokumentissa.
+%
+%********** \brk **********
+% \brk-käskyllä merkitään haluttu rivinvaihdon kohta.
+% Jos rivi on liian pitkä lopullisessa dokumentissa,
+% se katkeaa \brk:n kohdalta.
+%
+%********** \memorize[NIMI] **********
+% Tallentaa soinnut tästä eteenpäin nimellä NIMI.
+%
+%********** \replay[NIMI] **********
+% Ottaa NIMI-nimellä tallennetut soinnut käyttöön.
+% Merkki ^ valisee seuraavan soinnun tallennetusta
+% sointujonosta.

@@ -1,0 +1,152 @@
+% This commented line gives project the name in Writelatex.com service:
+\title{Soittovihko}
+\author{Mika}
+
+% Yksittäiset kappaleet ovat kukin omassa tekstitiedostossaan alakansiossa nimeltä "songs".
+% "songs"-kansio on samassa kansiossa kuin tämä tiedosto.
+
+%**************************************************************************
+% ALUSTUS
+%**************************************************************************
+\documentclass[12pt, twoside]{article}
+
+% Paperin koko ja marginaalit. Käytetään Geometry-pakettia tähän.
+\usepackage[a4paper, margin=10mm, inner=30mm]{geometry}
+%\usepackage[a4paper, margin=10mm, right=10mm, left=10mm]{geometry}
+
+% Päivämäärän muotoilu suomalaiseen tyyliin.
+\usepackage{datetime}
+\renewcommand{\dateseparator}{.}
+\dmyyyydate
+
+%% Otetaan käyttöön Songs-paketti. http://songs.sourceforge.net/
+\usepackage[chorded]{songs}
+
+% Merkistökoodaukseen liittyvät asetukset.
+\usepackage[utf8]{inputenc}
+
+% Fontit
+% Laulut:
+\renewcommand{\lyricfont}{\sffamily\small}
+%\renewcommand{\chorusfont}{\sffamily\itshape}
+% Soinnut::
+%\renewcommand\printchord[1]{\bfseries\ttfamily#1}
+%\renewcommand\printchord[1]{\ttfamily#1}
+\renewcommand\printchord[1]{\sffamily\normalsize#1}
+% Laulujen nimet:
+\renewcommand{\stitlefont}{\sffamily\Large}
+
+% Ei laulujen numerointia:
+%\nosongnumbers
+
+%% Ei säkeistöjen numerointia:
+%\noversenumbers
+
+% Nimetään säkeistön ja kertosäkeen sointukulut.
+\newchords{verse_oma}
+\newchords{chorus_oma}
+
+%% Säkeistöjen sisennys:
+\setlength{\versenumwidth}{5mm}
+
+%\setlength{\sbarheight}{0pt}
+
+%% Kuvien tuontiin liittyvät asetukset:
+\usepackage{graphicx}
+
+\usepackage{multicol}
+
+\usepackage{harmony}
+
+%**************************************************************************
+% SISÄLTÖ
+%**************************************************************************
+\begin{document}
+	
+	% Erilaiset marginaalit kansilehdelle:
+    \newgeometry{margin=30mm, bottom=15mm, top=50mm}
+        
+    % Otsikko:
+    \maketitle
+    
+    % Ei sivunumeroita:
+	\thispagestyle{empty}
+	\pagestyle{empty}
+
+	% Sisällysluettelo:
+    \renewcommand\contentsname{Sisällysluettelo}
+    \renewcommand*{\addcontentsline}[3]{\addtocontents{#1}{\protect\contentsline{#2}{#3}{}}}
+    
+    \begin{multicols}{2}
+        \tableofcontents
+    \end{multicols}
+    %\tableofcontents
+    %\addtocontents{toc}{~\hfill\textbf{Sivu}\par}
+    
+    % Palataan takaisin normaaleihin marginaaleihin:
+    \restoregeometry
+    
+    \newpage
+    
+	\begin{songs}{}
+
+		% Noudetaan yksittäiset kappaleet kansioista "laulut":
+		\input{laulut/han}
+		\input{laulut/missa_muruseni_on}
+        \input{laulut/me_kaksi_matkalla_tukholmaan}
+        \input{laulut/kaksi_puuta}
+		\input{laulut/jos_rakastat}
+		
+		\input{laulut/kulkuri_ja_joutsen}
+		
+		\input{laulut/aikuinen_nainen}
+        
+		\input{laulut/vain_rakkaus}
+		\input{laulut/syyslaulu}
+		
+        
+        %\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+        \input{laulut/tahdet_tahdet}
+        \input{laulut/valot}
+        
+        \begin{intersong}
+        	\centering
+        	\includegraphics[width=0.5\linewidth]{kuvat/valot}
+        \end{intersong}
+        
+        %\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+        \input{laulut/marilyn}
+        
+        %\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+        \input{laulut/tahroja_paperilla}
+        
+        %\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+        
+        \input{laulut/ranskalaiset_korot}
+        \input{laulut/jos_sa_tahdot_niin}
+
+%\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+\input{laulut/nopeimmat_junat}
+        \input{laulut/linnuton_puu}
+
+        
+        %\ifchorded\scleardpage\fi % Seuraava laulu alkaa parittoman sivun alusta.
+        \input{laulut/gabriellas_sang}
+        \input{laulut/elan_kuin_haaveilin}
+        
+        \input{laulut/maa_on_niin_kaunis}
+        \input{laulut/lahteella}
+        
+        % JOULULAULUT
+        %\part{Joululaulut}
+        \addcontentsline{toc}{part}{Joululauluja}
+        
+		\input{laulut/pyha_lucia}
+        \input{laulut/jouluyo_juhlayo}
+        \input{laulut/tulkoon_joulu}
+        
+        %\input{laulut/MALLI}
+        
+	\end{songs}
+        
+\end{document}
